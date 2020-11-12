@@ -1,0 +1,36 @@
+{
+  "name": "liteid-keys",
+  "version": "1.0.0",
+  "description": "Dump liteid electronic signature application session keys",
+  "main": "lib/launch.js",
+  "bin": "./bin/liteid-keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "<=14"
+  },
+  "os": ["darwin"],
+  "dependencies": {
+    "frida": "^14.0.8"
+  },
+  "keywords": [
+    "liteid",
+    "eid",
+    "eidas",
+    "signature",
+    "9303",
+    "pace",
+    "frida"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monai/frida-liteid-keys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/monai/frida-liteid-keys/issues"
+  },
+  "homepage": "https://github.com/monai/frida-liteid-keys#readme",
+  "author": "monai",
+  "license": "ISC"
+}
