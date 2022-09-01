@@ -1,5 +1,5 @@
 {
-  "name": "liteid-key-dump",
+  "name": "frida-liteid-keys",
   "version": "1.0.0",
   "description": "Dump liteid electronic signature application session keys",
   "main": "lib/launch.js",

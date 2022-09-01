@@ -1,9 +1,12 @@
-# liteid-keys
+# frida-liteid-keys
 
-This script dumps the secure messaging session keys of the Lithuanian ID card's electronic signature application. It intercepts calls to key derivation function `KDF(K, c)` defined in Doc 9303-11 section 9.7.1 and prints its result and counter `c` value.
+This script dumps the secure messaging session keys of the Lithuanian ID cards. ATK 2012 and ATK 2021 cards are supported.
 
 Example usage:
 
 ```shell
-npx liteid-keys /usr/local/bin/pkcs11-tool --module /Library/PWPW-Card/lib/pwpw-card-pkcs11.so --login --pin XXXXXXXX --list-objects
+bin/liteid-2012-keys.mjs /usr/local/bin/pkcs11-tool -v --module /Library/PWPW-Card/lib/pwpw-card-pkcs11.so --login --pin XXX -O
+
+bin/liteid-2021-keys-pkcs11.mjs /usr/local/bin/pkcs11-tool -v --module /Library/mCard/lib/mcard-pkcs11.so -O
+bin/liteid-2021-keys.mjs -n "Softemia mCard toolbox"
 ```
