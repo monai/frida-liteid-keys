@@ -5,6 +5,7 @@
   "main": "lib/launch.js",
   "bin": "./bin/liteid-keys.js",
   "scripts": {
+    "build": "make all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "os": [
@@ -18,10 +19,12 @@
     "@monai/eslint-config-base": "0.0.7",
     "@monai/eslint-config-node": "0.0.7",
     "@monai/eslint-config-style": "0.0.7",
+    "@types/frida-gum": "^18.1.0",
     "eslint": "^8.9.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-node": "^11.1.0",
+    "frida-compile": "^16.0.0"
   },
   "keywords": [
     "liteid",
