@@ -7,12 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "<=14"
-  },
-  "os": ["darwin"],
+  "os": [
+    "darwin"
+  ],
   "dependencies": {
-    "frida": "^14.0.8"
+    "frida": "^15.2.2"
   },
   "keywords": [
     "liteid",
