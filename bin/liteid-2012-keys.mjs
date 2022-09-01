@@ -2,9 +2,9 @@
 /* eslint-disable node/shebang */
 /* eslint-disable no-console */
 
-import launch from '../cmd/liteid_2012.mjs';
+import launch from '../lib/launch.mjs';
 
-launch(process.argv.slice(2))
+launch('../lib/liteid_2012.cjs', process.argv.slice(2))
   .catch((e) => {
     console.error(e);
   });
