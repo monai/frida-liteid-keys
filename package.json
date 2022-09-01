@@ -1,5 +1,5 @@
 {
-  "name": "liteid-keys",
+  "name": "liteid-key-dump",
   "version": "1.0.0",
   "description": "Dump liteid electronic signature application session keys",
   "main": "lib/launch.js",
