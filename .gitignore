@@ -1,6 +1,7 @@
 .vscode
 dist
 node_modules
+secrets
 
 .env
 mcard-log.txt
