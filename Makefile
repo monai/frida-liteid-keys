@@ -1,6 +1,11 @@
-all: dist/liteid_2012/agent.js
+dist_files = \
+	dist/agents/liteid_2012.cjs \
+	dist/agents/liteid_2021.cjs \
+	dist/agents/liteid_2021_pkcs11.cjs
 
-dist/liteid_2012/%.js: lib/liteid_2012/%.mjs
+all: $(dist_files)
+
+dist/agents/%.cjs: lib/agents/%.cjs
 	npx frida-compile --no-source-maps --compress $< -o $@
 
 clean:

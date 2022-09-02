@@ -4,7 +4,7 @@
 
 import launch from '../lib/launch.mjs';
 
-launch('../lib/liteid_2021.cjs', process.argv.slice(2))
+launch('../lib/agents/liteid_2021.cjs', process.argv.slice(2))
   .catch((e) => {
     console.error(e);
   });
